@@ -29,10 +29,12 @@ int main(){
     }
 
     cout << "\n输入的集合 A 为：" << endl;
+    int cnt = 0;
+    cout << "A = {";
     for (it = s.begin(); it != s.end(); it ++){
-        cout << *it << " ";
+       	cout << *it << (++cnt != (s.size())? ", ": "");
     }
-    cout << endl;
+    cout << "}" << endl; 
 
     do{
         cout << "\n请输入要查找的元素：" << endl;
